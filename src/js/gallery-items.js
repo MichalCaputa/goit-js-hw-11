@@ -12,7 +12,7 @@ export const galleryItems = async image => {
   }
   try {
     const response = await axios.get(
-      `https://pixabay.com/api/?key=${API_KEY}=${image}&image_type=photo&per_page=${per_page}&page=${page}&orientation=horizontal&safesearch=true`
+      `https://pixabay.com/api/?key=${API_KEY}q=${image}&image_type=photo&per_page=${per_page}&page=${page}&orientation=horizontal&safesearch=true`
     );
     page++;
     return { foundImages: response, page, per_page };
