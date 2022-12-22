@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <title>Images library</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+          pattern="^[a-zA-Z -]*$"
+        />
+        <button type="submit" aria-label="Search">
+          <svg class="btn-subs__icon">
+            <use class="icon" href="images/icons.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <button type="button" class="changer">Automatic loading of images</button>
+    </div>
+    <!-- Add gallery items to this list -->
+    <div class="gallery">
+      <!-- Obraz karty -->
+    </div>
+    <button type="button" class="load-more">Load more</button>
+    <div class="automatic-loading">Loading more pictures in progres...</div>
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>

@@ -2,26 +2,32 @@
   "name": "goit-js-hw-11",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://michalcaputa.github.io/goit-js-hw-11/",
+  "homepage": "https://michalcaputa.github.io/goit-js-hw-11",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js-hw-11/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michalcaputa/goit-js-hw-11.git"
+    "url": "git+https://github.com/goitacademy/goit-js-hw-11.git"
   },
   "keywords": [],
-  "author": "Michal Caputa",
+  "author": "Michał Caputa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/michalcaputa/goit-js-hw-11/issues"
+    "url": "https://github.com/goitacademy/goit-js-hw-11/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "axios": "^1.2.1",
+    "debounce": "^1.2.1",
+    "lodash": "^4.17.21",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.5",
+    "simplelightbox": "^2.11.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
+    "buffer": "^6.0.3",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
